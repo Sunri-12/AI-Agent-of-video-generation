@@ -1,0 +1,36 @@
+{
+  "video_title": "邁向 2030 淨零碳排：企業 ESG 永續發展藍圖",
+  "target_audience": "投資人、供應鏈夥伴與社會大眾",
+  "tone": "宏觀、誠懇、具啟發性與社會責任感",
+  "total_duration_sec": 20,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "scene_title": "氣候變遷與企業永續承諾",
+      "duration_sec": 7,
+      "visual_prompt": "太陽能綠建築園區空拍畫面，結合自然生態與智慧電網圖示",
+      "narration": "面對氣候變遷挑戰，我們將永續深植於企業策略，宣示二零三零年達成碳中和。",
+      "subtitle": "實踐地球公民責任，邁向 2030 營運碳中和",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 2,
+      "scene_title": "綠色供應鏈與再生能源導入",
+      "duration_sec": 7,
+      "visual_prompt": "智慧工廠產線運作畫面，儀表板顯示綠電使用比例逐年攀升",
+      "narration": "透過導入再生能源與低碳供應鏈，我們成功將年度碳排放強度降低了百分之三十五。",
+      "subtitle": "導入再生能源，年度碳排強度實質降低 35%",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 3,
+      "scene_title": "透明治理與社會共融影響力",
+      "duration_sec": 6,
+      "visual_prompt": "企業志工團隊參與偏鄉科技教育及偏鄉數位賦能活動紀實",
+      "narration": "除了環境守護，我們更積極投入科技人才培育與透明公司治理，落實社會責任。",
+      "subtitle": "深耕科技教育與透明治理，創造共融社會價值",
+      "bgm_mood": "Inspiring Finale"
+    }
+  ],
+  "call_to_action": "歡迎至企業官網下載完整版年度 ESG 永續發展報告書！"
+}

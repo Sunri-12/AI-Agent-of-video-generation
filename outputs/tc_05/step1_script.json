@@ -1,0 +1,36 @@
+{
+  "video_title": "AI 算力中心高速網路交換器產品簡介 - 企業數位轉型與創新實踐",
+  "target_audience": "網路工程師",
+  "tone": "高速、資訊密集",
+  "total_duration_sec": 20,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "scene_title": "企業痛點與市場趨勢洞察",
+      "duration_sec": 7,
+      "visual_prompt": "現代化企業會議室與數據流視覺特效，展現高速變化的商業環境",
+      "narration": "面對快速變遷的市場環境，AI 算力中心高速網已成為企業提升競爭力與效率的關鍵樞紐。",
+      "subtitle": "掌握AI 算力中心高速網路交關鍵趨勢，全面提升企業競爭力",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 2,
+      "scene_title": "AI 模組化架構與核心優勢",
+      "duration_sec": 7,
+      "visual_prompt": "展示 F1 模組化系統架構圖，呈現資料載入、混合檢索與智慧代理流程",
+      "narration": "透過模組化 AI 工程架構，將複雜業務拆解為高可靠度自動化步驟，降低導入門檻。",
+      "subtitle": "模組化 AI 工程架構，實現高可靠度流程自動化",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 3,
+      "scene_title": "品質把關與實戰應用成效",
+      "duration_sec": 6,
+      "visual_prompt": "系統自動執行多重品質檢核並通過測試綠燈的動態儀表板",
+      "narration": "內建嚴謹的輸出品質檢查與防護機制，確保每項交付成果皆符合企業合規標準。",
+      "subtitle": "內建多重品質檢核，確保企業級高精準度交付",
+      "bgm_mood": "Inspiring Finale"
+    }
+  ],
+  "call_to_action": "立即聯繫我們的數位轉型顧問，預約企業專屬概念驗證演示！"
+}

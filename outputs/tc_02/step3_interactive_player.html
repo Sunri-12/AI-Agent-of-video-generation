@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>企業零信任資安防護與合規實踐指南 - 企業 AI 影音預覽播放器</title>
+<style>
+  body { margin: 0; font-family: 'Microsoft JhengHei', sans-serif; background: #0b1120; color: #f8fafc; display: flex; flex-direction: column; align-items: center; padding: 24px; }
+  .header { max-width: 960px; width: 100%; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 12px; }
+  .badge { background: #0284c7; color: white; padding: 4px 12px; border-radius: 999px; font-size: 13px; }
+  .stage { position: relative; width: 960px; height: 540px; background: linear-gradient(135deg, #0f172a, #1e3a8a); border: 2px solid #38bdf8; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: space-between; }
+  .top-bar { background: rgba(15, 23, 42, 0.85); padding: 14px 24px; display: flex; justify-content: space-between; font-weight: bold; border-bottom: 1px solid rgba(56, 189, 248, 0.3); }
+  .visual-box { padding: 32px 48px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .visual-tag { color: #38bdf8; font-size: 14px; letter-spacing: 1px; margin-bottom: 8px; }
+  .visual-text { font-size: 22px; line-height: 1.6; color: #e2e8f0; background: rgba(15,23,42,0.6); padding: 20px; border-left: 4px solid #38bdf8; border-radius: 6px; }
+  .subtitle-bar { background: rgba(0, 0, 0, 0.82); padding: 18px 32px; text-align: center; font-size: 24px; font-weight: bold; color: #fde047; border-top: 2px solid #38bdf8; }
+  .controls { margin-top: 18px; display: flex; gap: 12px; align-items: center; }
+  button { background: #0284c7; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: bold; }
+  button:hover { background: #0369a1; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h2 style="margin:0;">🎬 企業零信任資安防護與合規實踐指南</h2>
+      <small style="color:#94a3b8;">受眾：全體研發與行政部門同仁 | 風格：嚴謹、清晰、具警示與行動力 | 總時長：32.0s</small>
+    </div>
+    <span class="badge">AI Enterprise Video Skill</span>
+  </div>
+
+  <div class="stage" id="playerStage">
+    <div class="top-bar">
+      <span id="sceneTitle">Scene 01</span>
+      <span id="sceneTimer" style="color:#38bdf8;">00:00</span>
+    </div>
+    <div class="visual-box">
+      <div class="visual-tag">🎥 AI 視覺分鏡畫面描述 (Visual Prompt)</div>
+      <div class="visual-text" id="visualPrompt">載入中...</div>
+      <p id="narrationText" style="color:#94a3b8; margin-top:16px; font-size:15px;"></p>
+    </div>
+    <div class="subtitle-bar" id="subtitleText">準備播放...</div>
+  </div>
+
+  <div class="controls">
+    <button onclick="playAll()">▶ 播放完整企業影片 (含配音)</button>
+    <button onclick="prevScene()">⏮ 上一幕</button>
+    <button onclick="nextScene()">⏭ 下一幕</button>
+    <audio id="audioPlayer" controls style="height:38px;"></audio>
+  </div>
+
+<script>
+  const scenes = [{"id": 1, "title": "企業面臨的現代網路威脅", "duration": 8.0, "visual": "展示全球即時網路攻擊熱點圖與企業防火牆監控戰情室畫面", "narration": "數位轉型浪潮下，企業每天面臨大量網路威脅，建立主動防禦機制刻不容緩。", "subtitle": "面對新型態資安威脅，企業主動防禦刻不容緩", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_01.wav", "image": "keyframes/scene_01.png"}, {"id": 2, "title": "零信任架構核心三原則", "duration": 8.0, "visual": "動態圖表呈現永不信任、始終驗證、最小權限存取三大支柱", "narration": "我們導入零信任架構，落實永不信任與最小權限原則，確保存取皆經雙重認證。", "subtitle": "零信任架構：永不信任、始終驗證、最小權限", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_02.wav", "image": "keyframes/scene_02.png"}, {"id": 3, "title": "多因素驗證與端點偵測實務", "duration": 8.0, "visual": "工程師使用硬體金鑰登入系統，畫面同步顯示 EDR 即時防護綠燈", "narration": "處理機敏資料請務必啟用多因素驗證，切勿點擊不明釣魚連結，守護研發資產。", "subtitle": "落實 MFA 驗證，嚴防社交工程與釣魚郵件", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_03.wav", "image": "keyframes/scene_03.png"}, {"id": 4, "title": "合規稽核與未來展望", "duration": 8.0, "visual": "出現 ISO 27001 認證標章與企業安全防護盾牌標誌", "narration": "透過全員資安意識提升與全天候智慧監控，我們攜手打造最值得信賴的資安防線。", "subtitle": "全員參與資安防護，打造值得信賴的企業防線", "bgm": "Inspiring Finale", "audio": "audio/scene_04.wav", "image": "keyframes/scene_04.png"}];
+  let currentIdx = 0;
+  const audioEl = document.getElementById('audioPlayer');
+
+  function renderScene(idx) {
+    const s = scenes[idx];
+    document.getElementById('sceneTitle').innerText = `Scene 0${s.id}: ${s.title} (${s.bgm})`;
+    document.getElementById('sceneTimer').innerText = `時長: ${s.duration}s`;
+    document.getElementById('visualPrompt').innerText = s.visual;
+    document.getElementById('narrationText').innerText = `🎙️ 旁白台詞：${s.narration}`;
+    document.getElementById('subtitleText').innerText = s.subtitle;
+    if (s.audio) {
+      audioEl.src = s.audio;
+    }
+  }
+
+  function playAll() {
+    currentIdx = 0;
+    renderScene(currentIdx);
+    audioEl.play();
+  }
+
+  audioEl.onended = () => {
+    if (currentIdx + 1 < scenes.length) {
+      currentIdx++;
+      renderScene(currentIdx);
+      audioEl.play();
+    }
+  };
+
+  function prevScene() { if (currentIdx > 0) { currentIdx--; renderScene(currentIdx); } }
+  function nextScene() { if (currentIdx + 1 < scenes.length) { currentIdx++; renderScene(currentIdx); } }
+  renderScene(0);
+</script>
+</body>
+</html>

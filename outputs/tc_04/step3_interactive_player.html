@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>邁向 2030 淨零碳排：企業 ESG 永續發展藍圖 - 企業 AI 影音預覽播放器</title>
+<style>
+  body { margin: 0; font-family: 'Microsoft JhengHei', sans-serif; background: #0b1120; color: #f8fafc; display: flex; flex-direction: column; align-items: center; padding: 24px; }
+  .header { max-width: 960px; width: 100%; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 12px; }
+  .badge { background: #0284c7; color: white; padding: 4px 12px; border-radius: 999px; font-size: 13px; }
+  .stage { position: relative; width: 960px; height: 540px; background: linear-gradient(135deg, #0f172a, #1e3a8a); border: 2px solid #38bdf8; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: space-between; }
+  .top-bar { background: rgba(15, 23, 42, 0.85); padding: 14px 24px; display: flex; justify-content: space-between; font-weight: bold; border-bottom: 1px solid rgba(56, 189, 248, 0.3); }
+  .visual-box { padding: 32px 48px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .visual-tag { color: #38bdf8; font-size: 14px; letter-spacing: 1px; margin-bottom: 8px; }
+  .visual-text { font-size: 22px; line-height: 1.6; color: #e2e8f0; background: rgba(15,23,42,0.6); padding: 20px; border-left: 4px solid #38bdf8; border-radius: 6px; }
+  .subtitle-bar { background: rgba(0, 0, 0, 0.82); padding: 18px 32px; text-align: center; font-size: 24px; font-weight: bold; color: #fde047; border-top: 2px solid #38bdf8; }
+  .controls { margin-top: 18px; display: flex; gap: 12px; align-items: center; }
+  button { background: #0284c7; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: bold; }
+  button:hover { background: #0369a1; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h2 style="margin:0;">🎬 邁向 2030 淨零碳排：企業 ESG 永續發展藍圖</h2>
+      <small style="color:#94a3b8;">受眾：投資人、供應鏈夥伴與社會大眾 | 風格：宏觀、誠懇、具啟發性與社會責任感 | 總時長：20.0s</small>
+    </div>
+    <span class="badge">AI Enterprise Video Skill</span>
+  </div>
+
+  <div class="stage" id="playerStage">
+    <div class="top-bar">
+      <span id="sceneTitle">Scene 01</span>
+      <span id="sceneTimer" style="color:#38bdf8;">00:00</span>
+    </div>
+    <div class="visual-box">
+      <div class="visual-tag">🎥 AI 視覺分鏡畫面描述 (Visual Prompt)</div>
+      <div class="visual-text" id="visualPrompt">載入中...</div>
+      <p id="narrationText" style="color:#94a3b8; margin-top:16px; font-size:15px;"></p>
+    </div>
+    <div class="subtitle-bar" id="subtitleText">準備播放...</div>
+  </div>
+
+  <div class="controls">
+    <button onclick="playAll()">▶ 播放完整企業影片 (含配音)</button>
+    <button onclick="prevScene()">⏮ 上一幕</button>
+    <button onclick="nextScene()">⏭ 下一幕</button>
+    <audio id="audioPlayer" controls style="height:38px;"></audio>
+  </div>
+
+<script>
+  const scenes = [{"id": 1, "title": "氣候變遷與企業永續承諾", "duration": 7.0, "visual": "太陽能綠建築園區空拍畫面，結合自然生態與智慧電網圖示", "narration": "面對氣候變遷挑戰，我們將永續深植於企業策略，宣示二零三零年達成碳中和。", "subtitle": "實踐地球公民責任，邁向 2030 營運碳中和", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_01.wav", "image": "keyframes/scene_01.png"}, {"id": 2, "title": "綠色供應鏈與再生能源導入", "duration": 7.0, "visual": "智慧工廠產線運作畫面，儀表板顯示綠電使用比例逐年攀升", "narration": "透過導入再生能源與低碳供應鏈，我們成功將年度碳排放強度降低了百分之三十五。", "subtitle": "導入再生能源，年度碳排強度實質降低 35%", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_02.wav", "image": "keyframes/scene_02.png"}, {"id": 3, "title": "透明治理與社會共融影響力", "duration": 6.0, "visual": "企業志工團隊參與偏鄉科技教育及偏鄉數位賦能活動紀實", "narration": "除了環境守護，我們更積極投入科技人才培育與透明公司治理，落實社會責任。", "subtitle": "深耕科技教育與透明治理，創造共融社會價值", "bgm": "Inspiring Finale", "audio": "audio/scene_03.wav", "image": "keyframes/scene_03.png"}];
+  let currentIdx = 0;
+  const audioEl = document.getElementById('audioPlayer');
+
+  function renderScene(idx) {
+    const s = scenes[idx];
+    document.getElementById('sceneTitle').innerText = `Scene 0${s.id}: ${s.title} (${s.bgm})`;
+    document.getElementById('sceneTimer').innerText = `時長: ${s.duration}s`;
+    document.getElementById('visualPrompt').innerText = s.visual;
+    document.getElementById('narrationText').innerText = `🎙️ 旁白台詞：${s.narration}`;
+    document.getElementById('subtitleText').innerText = s.subtitle;
+    if (s.audio) {
+      audioEl.src = s.audio;
+    }
+  }
+
+  function playAll() {
+    currentIdx = 0;
+    renderScene(currentIdx);
+    audioEl.play();
+  }
+
+  audioEl.onended = () => {
+    if (currentIdx + 1 < scenes.length) {
+      currentIdx++;
+      renderScene(currentIdx);
+      audioEl.play();
+    }
+  };
+
+  function prevScene() { if (currentIdx > 0) { currentIdx--; renderScene(currentIdx); } }
+  function nextScene() { if (currentIdx + 1 < scenes.length) { currentIdx++; renderScene(currentIdx); } }
+  renderScene(0);
+</script>
+</body>
+</html>

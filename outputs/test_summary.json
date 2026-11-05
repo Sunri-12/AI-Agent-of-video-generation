@@ -1,0 +1,404 @@
+{
+  "suite_name": "Enterprise AI Video Generation Skill Test Suite",
+  "executed_at": "2026-11-05 17:00:48",
+  "total_tests": 6,
+  "passed_tests": 6,
+  "results": [
+    {
+      "tc_id": "TC-01",
+      "name": "新產品發表行銷影片 (PSU-800W 鈦金級伺服器電源)",
+      "category": "產品行銷 (Product Launch)",
+      "description": "驗證結合企業知識庫 (94% 鈦金級效率、耐溫 55°C) 之四步標準流程，所有品質檢查應 100% 通過。",
+      "project_id": "tc_01",
+      "scene_count": 4,
+      "audio_duration_sec": 28.0,
+      "video_duration_sec": 28.0,
+      "video_size_bytes": 12238044,
+      "initial_qc_passed": true,
+      "initial_qc_score": 100.0,
+      "failed_rules_caught": [],
+      "remediated_qc_passed": null,
+      "remediated_qc_score": null,
+      "test_assertion_passed": true,
+      "elapsed_sec": 0.33,
+      "qc_rules_detail": [
+        {
+          "rule_id": "QC-01",
+          "rule_name": "腳本結構完整性與時長配置檢查",
+          "stage": "Script",
+          "passed": true,
+          "score": 100.0,
+          "details": "共 4 幕分鏡，腳本總秒數 28s (目標 28s，誤差 0s)，空白欄位數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-02",
+          "rule_name": "配音音訊完整性與播報語速檢查",
+          "stage": "Voiceover",
+          "passed": true,
+          "score": 100.0,
+          "details": "全片音軌時長 28.0s，平均語速 5.04 字/秒 (合理區間 1.5~7.5 字/秒)，異常音檔數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-03",
+          "rule_name": "影片渲染實體檔案與分鏡關鍵影格檢查",
+          "stage": "Video",
+          "passed": true,
+          "score": 100.0,
+          "details": "解析度 1280x720 @ 5fps，總影格數 140 frames，影片大小 12,238,044 bytes，遺失分鏡圖: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-04",
+          "rule_name": "音畫時長同步率與字幕版面檢查",
+          "stage": "Sync",
+          "passed": true,
+          "score": 100.0,
+          "details": "音軌時長 28.0s vs 影片時長 28.0s (偏差 0.0s)，超長字幕(>32字)幕數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-05",
+          "rule_name": "企業合規詞彙與品牌安全防護檢查",
+          "stage": "Compliance",
+          "passed": true,
+          "score": 100.0,
+          "details": "未偵測到誇大或違規詞彙，符合企業傳播規範",
+          "suggestion": ""
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-02",
+      "name": "企業內部資安合規宣導影片 (ISO 27001 零信任架構)",
+      "category": "內部合規培訓 (Security & Compliance)",
+      "description": "驗證資安培訓場景下分步拆解執行 (Step 1 -> Step 2 -> Step 3 -> Step 4) 與女聲配音、SRT 字幕生成品質。",
+      "project_id": "tc_02",
+      "scene_count": 4,
+      "audio_duration_sec": 32.0,
+      "video_duration_sec": 32.0,
+      "video_size_bytes": 13691424,
+      "initial_qc_passed": true,
+      "initial_qc_score": 100.0,
+      "failed_rules_caught": [],
+      "remediated_qc_passed": null,
+      "remediated_qc_score": null,
+      "test_assertion_passed": true,
+      "elapsed_sec": 0.36,
+      "qc_rules_detail": [
+        {
+          "rule_id": "QC-01",
+          "rule_name": "腳本結構完整性與時長配置檢查",
+          "stage": "Script",
+          "passed": true,
+          "score": 100.0,
+          "details": "共 4 幕分鏡，腳本總秒數 32s (目標 32s，誤差 0s)，空白欄位數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-02",
+          "rule_name": "配音音訊完整性與播報語速檢查",
+          "stage": "Voiceover",
+          "passed": true,
+          "score": 100.0,
+          "details": "全片音軌時長 32.0s，平均語速 4.38 字/秒 (合理區間 1.5~7.5 字/秒)，異常音檔數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-03",
+          "rule_name": "影片渲染實體檔案與分鏡關鍵影格檢查",
+          "stage": "Video",
+          "passed": true,
+          "score": 100.0,
+          "details": "解析度 1280x720 @ 5fps，總影格數 160 frames，影片大小 13,691,424 bytes，遺失分鏡圖: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-04",
+          "rule_name": "音畫時長同步率與字幕版面檢查",
+          "stage": "Sync",
+          "passed": true,
+          "score": 100.0,
+          "details": "音軌時長 32.0s vs 影片時長 32.0s (偏差 0.0s)，超長字幕(>32字)幕數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-05",
+          "rule_name": "企業合規詞彙與品牌安全防護檢查",
+          "stage": "Compliance",
+          "passed": true,
+          "score": 100.0,
+          "details": "未偵測到誇大或違規詞彙，符合企業傳播規範",
+          "suggestion": ""
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-03",
+      "name": "新進員工入職培訓導覽影片 (Onboarding & 敏捷文化)",
+      "category": "人資培訓 (HR Onboarding)",
+      "description": "驗證 24 秒中短篇入職導覽影片之分鏡配置、語速穩定度與音畫同步精準度。",
+      "project_id": "tc_03",
+      "scene_count": 4,
+      "audio_duration_sec": 24.0,
+      "video_duration_sec": 24.0,
+      "video_size_bytes": 10295084,
+      "initial_qc_passed": true,
+      "initial_qc_score": 100.0,
+      "failed_rules_caught": [],
+      "remediated_qc_passed": null,
+      "remediated_qc_score": null,
+      "test_assertion_passed": true,
+      "elapsed_sec": 0.3,
+      "qc_rules_detail": [
+        {
+          "rule_id": "QC-01",
+          "rule_name": "腳本結構完整性與時長配置檢查",
+          "stage": "Script",
+          "passed": true,
+          "score": 100.0,
+          "details": "共 4 幕分鏡，腳本總秒數 24s (目標 24s，誤差 0s)，空白欄位數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-02",
+          "rule_name": "配音音訊完整性與播報語速檢查",
+          "stage": "Voiceover",
+          "passed": true,
+          "score": 100.0,
+          "details": "全片音軌時長 24.0s，平均語速 6.0 字/秒 (合理區間 1.5~7.5 字/秒)，異常音檔數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-03",
+          "rule_name": "影片渲染實體檔案與分鏡關鍵影格檢查",
+          "stage": "Video",
+          "passed": true,
+          "score": 100.0,
+          "details": "解析度 1280x720 @ 5fps，總影格數 120 frames，影片大小 10,295,084 bytes，遺失分鏡圖: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-04",
+          "rule_name": "音畫時長同步率與字幕版面檢查",
+          "stage": "Sync",
+          "passed": true,
+          "score": 100.0,
+          "details": "音軌時長 24.0s vs 影片時長 24.0s (偏差 0.0s)，超長字幕(>32字)幕數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-05",
+          "rule_name": "企業合規詞彙與品牌安全防護檢查",
+          "stage": "Compliance",
+          "passed": true,
+          "score": 100.0,
+          "details": "未偵測到誇大或違規詞彙，符合企業傳播規範",
+          "suggestion": ""
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-04",
+      "name": "企業 ESG 永續發展與 2030 淨零碳排形象短片",
+      "category": "品牌公關與永續 (ESG & PR)",
+      "description": "驗證 20 秒精簡版（3 幕分鏡）企業形象短片之動態分鏡壓縮與音畫對齊檢查。",
+      "project_id": "tc_04",
+      "scene_count": 3,
+      "audio_duration_sec": 20.0,
+      "video_duration_sec": 20.0,
+      "video_size_bytes": 8686794,
+      "initial_qc_passed": true,
+      "initial_qc_score": 100.0,
+      "failed_rules_caught": [],
+      "remediated_qc_passed": null,
+      "remediated_qc_score": null,
+      "test_assertion_passed": true,
+      "elapsed_sec": 0.28,
+      "qc_rules_detail": [
+        {
+          "rule_id": "QC-01",
+          "rule_name": "腳本結構完整性與時長配置檢查",
+          "stage": "Script",
+          "passed": true,
+          "score": 100.0,
+          "details": "共 3 幕分鏡，腳本總秒數 20s (目標 20s，誤差 0s)，空白欄位數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-02",
+          "rule_name": "配音音訊完整性與播報語速檢查",
+          "stage": "Voiceover",
+          "passed": true,
+          "score": 100.0,
+          "details": "全片音軌時長 20.0s，平均語速 5.37 字/秒 (合理區間 1.5~7.5 字/秒)，異常音檔數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-03",
+          "rule_name": "影片渲染實體檔案與分鏡關鍵影格檢查",
+          "stage": "Video",
+          "passed": true,
+          "score": 100.0,
+          "details": "解析度 1280x720 @ 5fps，總影格數 100 frames，影片大小 8,686,794 bytes，遺失分鏡圖: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-04",
+          "rule_name": "音畫時長同步率與字幕版面檢查",
+          "stage": "Sync",
+          "passed": true,
+          "score": 100.0,
+          "details": "音軌時長 20.0s vs 影片時長 20.0s (偏差 0.0s)，超長字幕(>32字)幕數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-05",
+          "rule_name": "企業合規詞彙與品牌安全防護檢查",
+          "stage": "Compliance",
+          "passed": true,
+          "score": 100.0,
+          "details": "未偵測到誇大或違規詞彙，符合企業傳播規範",
+          "suggestion": ""
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-05",
+      "name": "品質檢查壓力與自癒測試：超長旁白導致語速過快 & 字幕超長攔截",
+      "category": "負向品質攔截與自癒 (QC Gate & Self-Healing)",
+      "description": "故意注入 4 秒內塞入 55 字旁白（語速 > 13 字/秒，超出 7.5 上限）與 45 字超長字幕，驗證 QC-02 與 QC-04 能精準攔截，並測試自動修復後重驗通過。",
+      "project_id": "tc_05",
+      "scene_count": 3,
+      "audio_duration_sec": 17.0,
+      "video_duration_sec": 17.0,
+      "video_size_bytes": 7961854,
+      "initial_qc_passed": false,
+      "initial_qc_score": 93.0,
+      "failed_rules_caught": [
+        "QC-02",
+        "QC-04"
+      ],
+      "remediated_qc_passed": true,
+      "remediated_qc_score": 100.0,
+      "test_assertion_passed": true,
+      "elapsed_sec": 0.5,
+      "qc_rules_detail": [
+        {
+          "rule_id": "QC-01",
+          "rule_name": "腳本結構完整性與時長配置檢查",
+          "stage": "Script",
+          "passed": true,
+          "score": 100.0,
+          "details": "共 3 幕分鏡，腳本總秒數 17s (目標 20s，誤差 3s)，空白欄位數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-02",
+          "rule_name": "配音音訊完整性與播報語速檢查",
+          "stage": "Voiceover",
+          "passed": false,
+          "score": 80.0,
+          "details": "全片音軌時長 17.0s，平均語速 9.21 字/秒 (合理區間 1.5~7.5 字/秒)，異常音檔數: 0",
+          "suggestion": "語速異常或音檔損毀 (Scene 1 (16.5 字/秒))，建議精簡旁白字數或調整場景秒數。"
+        },
+        {
+          "rule_id": "QC-03",
+          "rule_name": "影片渲染實體檔案與分鏡關鍵影格檢查",
+          "stage": "Video",
+          "passed": true,
+          "score": 100.0,
+          "details": "解析度 1280x720 @ 5fps，總影格數 85 frames，影片大小 7,961,854 bytes，遺失分鏡圖: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-04",
+          "rule_name": "音畫時長同步率與字幕版面檢查",
+          "stage": "Sync",
+          "passed": false,
+          "score": 85.0,
+          "details": "音軌時長 17.0s vs 影片時長 17.0s (偏差 0.0s)，超長字幕(>32字)幕數: 1",
+          "suggestion": "音畫時長偏差過大或單行字幕超過 32 字，建議重新對齊時間軸並濃縮字幕。"
+        },
+        {
+          "rule_id": "QC-05",
+          "rule_name": "企業合規詞彙與品牌安全防護檢查",
+          "stage": "Compliance",
+          "passed": true,
+          "score": 100.0,
+          "details": "未偵測到誇大或違規詞彙，符合企業傳播規範",
+          "suggestion": ""
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-06",
+      "name": "企業合規防護測試：誇大禁用詞彙攔截與清理驗證",
+      "category": "合規安全防護 (Compliance Guardrail)",
+      "description": "故意在腳本旁白注入『保證獲利』與『100%零風險』等企業傳播違規詞，驗證 QC-05 合規檢查能 100% 攔截，並於清理違規詞後重驗通過。",
+      "project_id": "tc_06",
+      "scene_count": 4,
+      "audio_duration_sec": 24.0,
+      "video_duration_sec": 24.0,
+      "video_size_bytes": 10367804,
+      "initial_qc_passed": false,
+      "initial_qc_score": 76.0,
+      "failed_rules_caught": [
+        "QC-02",
+        "QC-05"
+      ],
+      "remediated_qc_passed": true,
+      "remediated_qc_score": 100.0,
+      "test_assertion_passed": true,
+      "elapsed_sec": 0.65,
+      "qc_rules_detail": [
+        {
+          "rule_id": "QC-01",
+          "rule_name": "腳本結構完整性與時長配置檢查",
+          "stage": "Script",
+          "passed": true,
+          "score": 100.0,
+          "details": "共 4 幕分鏡，腳本總秒數 24s (目標 24s，誤差 0s)，空白欄位數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-02",
+          "rule_name": "配音音訊完整性與播報語速檢查",
+          "stage": "Voiceover",
+          "passed": false,
+          "score": 80.0,
+          "details": "全片音軌時長 24.0s，平均語速 7.12 字/秒 (合理區間 1.5~7.5 字/秒)，異常音檔數: 0",
+          "suggestion": "語速異常或音檔損毀 (Scene 4 (11.17 字/秒))，建議精簡旁白字數或調整場景秒數。"
+        },
+        {
+          "rule_id": "QC-03",
+          "rule_name": "影片渲染實體檔案與分鏡關鍵影格檢查",
+          "stage": "Video",
+          "passed": true,
+          "score": 100.0,
+          "details": "解析度 1280x720 @ 5fps，總影格數 120 frames，影片大小 10,367,804 bytes，遺失分鏡圖: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-04",
+          "rule_name": "音畫時長同步率與字幕版面檢查",
+          "stage": "Sync",
+          "passed": true,
+          "score": 100.0,
+          "details": "音軌時長 24.0s vs 影片時長 24.0s (偏差 0.0s)，超長字幕(>32字)幕數: 0",
+          "suggestion": ""
+        },
+        {
+          "rule_id": "QC-05",
+          "rule_name": "企業合規詞彙與品牌安全防護檢查",
+          "stage": "Compliance",
+          "passed": false,
+          "score": 0.0,
+          "details": "偵測到禁用詞彙: ['保證獲利', '100%零風險', '宇宙第一']",
+          "suggestion": "請立即移除違規誇大詞彙：保證獲利, 100%零風險, 宇宙第一。"
+        }
+      ]
+    }
+  ]
+}

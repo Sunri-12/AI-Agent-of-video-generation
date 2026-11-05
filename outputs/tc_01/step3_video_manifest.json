@@ -1,0 +1,37 @@
+{
+  "project_id": "tc_01",
+  "video_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_01\\step3_enterprise_video.avi",
+  "html5_player_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_01\\step3_interactive_player.html",
+  "storyboard_manifest_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_01\\step3_video_manifest.json",
+  "resolution": "1280x720",
+  "fps": 5,
+  "total_frames": 140,
+  "total_duration_sec": 28.0,
+  "file_size_bytes": 12238044,
+  "scene_assets": [
+    {
+      "scene_id": 1,
+      "keyframe_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_01\\keyframes\\scene_01.png",
+      "resolution": "1280x720",
+      "duration_sec": 7.0
+    },
+    {
+      "scene_id": 2,
+      "keyframe_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_01\\keyframes\\scene_02.png",
+      "resolution": "1280x720",
+      "duration_sec": 7.0
+    },
+    {
+      "scene_id": 3,
+      "keyframe_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_01\\keyframes\\scene_03.png",
+      "resolution": "1280x720",
+      "duration_sec": 7.0
+    },
+    {
+      "scene_id": 4,
+      "keyframe_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_01\\keyframes\\scene_04.png",
+      "resolution": "1280x720",
+      "duration_sec": 7.0
+    }
+  ]
+}

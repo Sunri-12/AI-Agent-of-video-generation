@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>新一代鈦金級伺服器電源 PSU-800W 產品發表 - 企業 AI 影音預覽播放器</title>
+<style>
+  body { margin: 0; font-family: 'Microsoft JhengHei', sans-serif; background: #0b1120; color: #f8fafc; display: flex; flex-direction: column; align-items: center; padding: 24px; }
+  .header { max-width: 960px; width: 100%; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 12px; }
+  .badge { background: #0284c7; color: white; padding: 4px 12px; border-radius: 999px; font-size: 13px; }
+  .stage { position: relative; width: 960px; height: 540px; background: linear-gradient(135deg, #0f172a, #1e3a8a); border: 2px solid #38bdf8; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: space-between; }
+  .top-bar { background: rgba(15, 23, 42, 0.85); padding: 14px 24px; display: flex; justify-content: space-between; font-weight: bold; border-bottom: 1px solid rgba(56, 189, 248, 0.3); }
+  .visual-box { padding: 32px 48px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .visual-tag { color: #38bdf8; font-size: 14px; letter-spacing: 1px; margin-bottom: 8px; }
+  .visual-text { font-size: 22px; line-height: 1.6; color: #e2e8f0; background: rgba(15,23,42,0.6); padding: 20px; border-left: 4px solid #38bdf8; border-radius: 6px; }
+  .subtitle-bar { background: rgba(0, 0, 0, 0.82); padding: 18px 32px; text-align: center; font-size: 24px; font-weight: bold; color: #fde047; border-top: 2px solid #38bdf8; }
+  .controls { margin-top: 18px; display: flex; gap: 12px; align-items: center; }
+  button { background: #0284c7; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: bold; }
+  button:hover { background: #0369a1; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h2 style="margin:0;">🎬 新一代鈦金級伺服器電源 PSU-800W 產品發表</h2>
+      <small style="color:#94a3b8;">受眾：雲端資料中心架構師與企業 IT 採購決策者 | 風格：專業、具科技感、權威 | 總時長：28.0s</small>
+    </div>
+    <span class="badge">AI Enterprise Video Skill</span>
+  </div>
+
+  <div class="stage" id="playerStage">
+    <div class="top-bar">
+      <span id="sceneTitle">Scene 01</span>
+      <span id="sceneTimer" style="color:#38bdf8;">00:00</span>
+    </div>
+    <div class="visual-box">
+      <div class="visual-tag">🎥 AI 視覺分鏡畫面描述 (Visual Prompt)</div>
+      <div class="visual-text" id="visualPrompt">載入中...</div>
+      <p id="narrationText" style="color:#94a3b8; margin-top:16px; font-size:15px;"></p>
+    </div>
+    <div class="subtitle-bar" id="subtitleText">準備播放...</div>
+  </div>
+
+  <div class="controls">
+    <button onclick="playAll()">▶ 播放完整企業影片 (含配音)</button>
+    <button onclick="prevScene()">⏮ 上一幕</button>
+    <button onclick="nextScene()">⏭ 下一幕</button>
+    <audio id="audioPlayer" controls style="height:38px;"></audio>
+  </div>
+
+<script>
+  const scenes = [{"id": 1, "title": "AI 算力時代的綠能挑戰", "duration": 7.0, "visual": "大型 AI 資料中心機房特寫，高密度伺服器機櫃閃爍藍色指示燈", "narration": "隨著 AI 算力需求爆發，資料中心面臨高功耗挑戰，高效電源成為減碳關鍵。", "subtitle": "突破高算力能耗瓶頸，開啟綠能資料中心新紀元", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_01.wav", "image": "keyframes/scene_01.png"}, {"id": 2, "title": "PSU-800W 鈦金級轉換效率", "duration": 7.0, "visual": "3D 拆解動畫展示 PSU-800W 內部日系固態電容與智慧溫控風扇", "narration": "全新 PSU-800W 具備百分之九十四鈦金級轉換效率，並支援五十五度耐溫上限。", "subtitle": "PSU-800W：94% 鈦金級轉換效率，耐溫達 55°C", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_02.wav", "image": "keyframes/scene_02.png"}, {"id": 3, "title": "智慧監控與高可用性設計", "duration": 7.0, "visual": "戰情室儀表板顯示電壓穩定曲線與主動式故障預警系統", "narration": "內建數位電源管理晶片，即時監測負載與轉速，搭配熱插拔冗餘確保零中斷。", "subtitle": "數位智慧監控 + 熱插拔冗餘，保障服務零中斷", "bgm": "Upbeat Corporate Tech", "audio": "audio/scene_03.wav", "image": "keyframes/scene_03.png"}, {"id": 4, "title": "立即升級企業算力基礎設施", "duration": 7.0, "visual": "品牌標誌與全球技術服務專線畫面，搭配科技感光效收尾", "narration": "選擇穩定高效的動力核心，為 AI 基礎設施注入極致動能，歡迎聯繫顧問團隊。", "subtitle": "升級極致算力核心，立即預約企業專屬測試方案", "bgm": "Inspiring Finale", "audio": "audio/scene_04.wav", "image": "keyframes/scene_04.png"}];
+  let currentIdx = 0;
+  const audioEl = document.getElementById('audioPlayer');
+
+  function renderScene(idx) {
+    const s = scenes[idx];
+    document.getElementById('sceneTitle').innerText = `Scene 0${s.id}: ${s.title} (${s.bgm})`;
+    document.getElementById('sceneTimer').innerText = `時長: ${s.duration}s`;
+    document.getElementById('visualPrompt').innerText = s.visual;
+    document.getElementById('narrationText').innerText = `🎙️ 旁白台詞：${s.narration}`;
+    document.getElementById('subtitleText').innerText = s.subtitle;
+    if (s.audio) {
+      audioEl.src = s.audio;
+    }
+  }
+
+  function playAll() {
+    currentIdx = 0;
+    renderScene(currentIdx);
+    audioEl.play();
+  }
+
+  audioEl.onended = () => {
+    if (currentIdx + 1 < scenes.length) {
+      currentIdx++;
+      renderScene(currentIdx);
+      audioEl.play();
+    }
+  };
+
+  function prevScene() { if (currentIdx > 0) { currentIdx--; renderScene(currentIdx); } }
+  function nextScene() { if (currentIdx + 1 < scenes.length) { currentIdx++; renderScene(currentIdx); } }
+  renderScene(0);
+</script>
+</body>
+</html>

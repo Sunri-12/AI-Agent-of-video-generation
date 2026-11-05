@@ -1,0 +1,36 @@
+{
+  "project_id": "tc_04",
+  "voice_profile": "zh-TW-Corporate-Female",
+  "total_audio_duration_sec": 20.0,
+  "full_audio_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_04\\step2_full_voiceover.wav",
+  "srt_subtitle_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_04\\step2_subtitles.srt",
+  "scene_audios": [
+    {
+      "scene_id": 1,
+      "audio_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_04\\audio\\scene_01.wav",
+      "actual_duration_sec": 7.0,
+      "sample_rate": 24000,
+      "file_size_bytes": 336044,
+      "char_count": 35,
+      "speaking_rate_cps": 5.0
+    },
+    {
+      "scene_id": 2,
+      "audio_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_04\\audio\\scene_02.wav",
+      "actual_duration_sec": 7.0,
+      "sample_rate": 24000,
+      "file_size_bytes": 336044,
+      "char_count": 37,
+      "speaking_rate_cps": 5.29
+    },
+    {
+      "scene_id": 3,
+      "audio_path": "C:\\Users\\Sunri\\Documents\\盛大實作\\AI_Agent_System\\outputs\\tc_04\\audio\\scene_03.wav",
+      "actual_duration_sec": 6.0,
+      "sample_rate": 24000,
+      "file_size_bytes": 288044,
+      "char_count": 35,
+      "speaking_rate_cps": 5.83
+    }
+  ]
+}

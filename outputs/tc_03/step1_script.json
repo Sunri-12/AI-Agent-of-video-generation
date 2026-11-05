@@ -1,0 +1,45 @@
+{
+  "video_title": "歡迎加入創新科技團隊：新進夥伴入職導覽",
+  "target_audience": "新進工程師與產品經理",
+  "tone": "溫暖、充滿活力、開放透明",
+  "total_duration_sec": 24,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "scene_title": "熱烈歡迎新夥伴加入",
+      "duration_sec": 6,
+      "visual_prompt": "明亮現代化的企業總部大廳，團隊成員微笑擊掌歡迎新同事",
+      "narration": "歡迎加入我們的大家庭！每位夥伴的創意與專業，都是推動企業突破的核心動能。",
+      "subtitle": "歡迎加入大家庭！創新與專業從這裡啟航",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 2,
+      "scene_title": "敏捷協作與開放文化",
+      "duration_sec": 6,
+      "visual_prompt": "跨部門團隊在玻璃白板前進行敏捷衝刺討論，氣氛熱絡",
+      "narration": "我們推崇開放透明的敏捷協作文化，透過數位知識庫與 AI 工具讓溝通無縫接軌。",
+      "subtitle": "開放透明、敏捷協作，AI 工具賦能高效工作",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 3,
+      "scene_title": "首週入職培訓與導師制度",
+      "duration_sec": 6,
+      "visual_prompt": "專屬導師一對一指導新進同仁設定開發環境與認識專案架構",
+      "narration": "入職首週將由專屬導師帶領您熟悉企業文化與技術架構，助您快速融入團隊節奏。",
+      "subtitle": "一對一導師制度，助您快速掌握核心架構",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 4,
+      "scene_title": "共創卓越職涯里程碑",
+      "duration_sec": 6,
+      "visual_prompt": "團隊於落地窗前合影，畫面浮現企業願景標語與培訓平台連結",
+      "narration": "期待與您在專案中並肩作戰，現在就開啟入職學習地圖，一起定義未來科技體驗！",
+      "subtitle": "開啟入職學習地圖，攜手定義未來科技體驗",
+      "bgm_mood": "Inspiring Finale"
+    }
+  ],
+  "call_to_action": "請登入內部人才發展平台，開始您的第一堂入職探索課程！"
+}

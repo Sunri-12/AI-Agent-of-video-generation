@@ -1,0 +1,45 @@
+{
+  "video_title": "新一代鈦金級伺服器電源 PSU-800W 產品發表",
+  "target_audience": "雲端資料中心架構師與企業 IT 採購決策者",
+  "tone": "專業、具科技感、權威",
+  "total_duration_sec": 28,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "scene_title": "AI 算力時代的綠能挑戰",
+      "duration_sec": 7,
+      "visual_prompt": "大型 AI 資料中心機房特寫，高密度伺服器機櫃閃爍藍色指示燈",
+      "narration": "隨著 AI 算力需求爆發，資料中心面臨高功耗挑戰，高效電源成為減碳關鍵。",
+      "subtitle": "突破高算力能耗瓶頸，開啟綠能資料中心新紀元",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 2,
+      "scene_title": "PSU-800W 鈦金級轉換效率",
+      "duration_sec": 7,
+      "visual_prompt": "3D 拆解動畫展示 PSU-800W 內部日系固態電容與智慧溫控風扇",
+      "narration": "全新 PSU-800W 具備百分之九十四鈦金級轉換效率，並支援五十五度耐溫上限。",
+      "subtitle": "PSU-800W：94% 鈦金級轉換效率，耐溫達 55°C",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 3,
+      "scene_title": "智慧監控與高可用性設計",
+      "duration_sec": 7,
+      "visual_prompt": "戰情室儀表板顯示電壓穩定曲線與主動式故障預警系統",
+      "narration": "內建數位電源管理晶片，即時監測負載與轉速，搭配熱插拔冗餘確保零中斷。",
+      "subtitle": "數位智慧監控 + 熱插拔冗餘，保障服務零中斷",
+      "bgm_mood": "Upbeat Corporate Tech"
+    },
+    {
+      "scene_id": 4,
+      "scene_title": "立即升級企業算力基礎設施",
+      "duration_sec": 7,
+      "visual_prompt": "品牌標誌與全球技術服務專線畫面，搭配科技感光效收尾",
+      "narration": "選擇穩定高效的動力核心，為 AI 基礎設施注入極致動能，歡迎聯繫顧問團隊。",
+      "subtitle": "升級極致算力核心，立即預約企業專屬測試方案",
+      "bgm_mood": "Inspiring Finale"
+    }
+  ],
+  "call_to_action": "立即聯繫企業解決方案團隊，索取 PSU-800W 完整測試報告！"
+}
